@@ -1,8 +1,8 @@
 import bs4
-from langchain import hub
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -31,7 +31,21 @@ vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings
 
 # Retrieve and generate using the relevant snippets of the blog.
 retriever = vectorstore.as_retriever()
-prompt = hub.pull("rlm/rag-prompt")
+# "rlm/rag-prompt" ile ayni sablon; Hub'a agdan baglanmayi gerektirmez.
+prompt = ChatPromptTemplate.from_messages(
+    [
+        (
+            "human",
+            "You are an assistant for question-answering tasks. Use the following "
+            "pieces of retrieved context to answer the question. If you don't know "
+            "the answer, just say that you don't know. Use three sentences maximum "
+            "and keep the answer concise.\n"
+            "Question: {question} \n"
+            "Context: {context} \n"
+            "Answer:",
+        )
+    ]
+)
 
 
 def format_docs(docs):
