@@ -1,0 +1,39 @@
+# --- Ortam degiskenleri / gizli anahtarlar ---
+.env
+.env.*
+!.env.example
+*.key
+
+# --- Python sanal ortamlari ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- Vektor veritabani / model ciktilari ---
+chroma_db/
+.chroma/
+*.sqlite3
+faiss_index/
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
+
+# --- Isletim sistemi ---
+.DS_Store
+Thumbs.db
