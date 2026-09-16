@@ -7,6 +7,8 @@ LangChain, RAG ve embedding konularını öğrenirken yazdığım deneme kodlar�
 | Klasör | İçerik |
 |---|---|
 | `VectorStore/` | Chroma vector store ile temel benzerlik araması örneği. |
+| `RAGIntro/` | Tek bir blog yazısı üzerinde basit RAG zinciri (yükle → böl → indeksle → cevapla). |
+| [`CorrectiveRAGProject/`](CorrectiveRAGProject/) | LangGraph ile Corrective RAG (CRAG): soru yönlendirme, doküman değerlendirme, Tavily web araması ve hallucination/cevap kontrolü. |
 
 ## Kurulum
 
