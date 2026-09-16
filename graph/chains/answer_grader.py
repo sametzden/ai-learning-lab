@@ -11,7 +11,7 @@ class GradeAnswer(BaseModel):
     )
 
 
-llm = ChatOpenAI(model="gpt-5.6-terra", temperature=0, reasoning_effort="none")
+llm = ChatOpenAI(temperature=0)
 structured_llm_grader = llm.with_structured_output(GradeAnswer)
 
 system = """You are a grader assessing whether an answer addresses / resolves a question \n 
