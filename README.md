@@ -1,6 +1,6 @@
 # LLM Projeleri
 
-LangChain, RAG ve embedding konularını öğrenirken yazdığım deneme kodları ve küçük projeler.
+LangChain, RAG, embedding ve Transformer mimarileri üzerine çalışırken yazdığım deneme kodları ve küçük projeler.
 
 ## Klasörler
 
@@ -9,6 +9,8 @@ LangChain, RAG ve embedding konularını öğrenirken yazdığım deneme kodlar�
 | `VectorStore/` | Chroma vector store ile temel benzerlik araması örneği. |
 | `RAGIntro/` | Tek bir blog yazısı üzerinde basit RAG zinciri (yükle → böl → indeksle → cevapla). |
 | [`CorrectiveRAGProject/`](CorrectiveRAGProject/) | LangGraph ile Corrective RAG (CRAG): soru yönlendirme, doküman değerlendirme, Tavily web araması ve hallucination/cevap kontrolü. |
+| `RAGArxiv/` | arXiv makaleleri üzerinde RAG: `index.py` corpus'u Chroma'ya indeksler, `query.py` soru sorar, `eval.py` 50 soruluk golden set ile retrieval'ı ölçer (`results/baseline.json`). |
+| `VisionTransformer/` | PyTorch ile sıfırdan Vision Transformer (ViT), Jupyter notebook üzerinde. Veri seti Caltech101. |
 
 ## Kurulum
 
@@ -21,12 +23,37 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+`CorrectiveRAGProject/` [uv](https://docs.astral.sh/uv/) ile de kurulabilir: `uv sync`.
+
+### VisionTransformer
+
+Notebook'u çalıştırmak için ortamı Jupyter kernel'i olarak kaydedin:
+
+```bash
+cd VisionTransformer
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python -m ipykernel install --user --name vision-transformer --display-name "Python (VisionTransformer)"
+jupyter lab
+```
+
+Caltech101 veri seti ilk çalıştırmada `torchvision` tarafından `data/` klasörüne indirilir (~150 MB, repoya girmez). CUDA destekli bir GPU varsa otomatik kullanılır.
+
 ## Ortam değişkenleri
 
-Her klasördeki `.env.example` dosyasını `.env` olarak kopyalayıp kendi anahtarlarınızı girin:
+LangChain projeleri API anahtarlarını `.env` dosyasından okur. `.env.example` bulunan klasörlerde (`VectorStore/`, `CorrectiveRAGProject/`) bu dosyayı kopyalayıp kendi anahtarlarınızı girin:
 
 ```bash
 cp .env.example .env
 ```
 
-`.env` dosyaları `.gitignore` içinde — API anahtarları repoya girmez.
+| Değişken | Kullanan projeler |
+|---|---|
+| `OPENAI_API_KEY` | `VectorStore/`, `RAGIntro/`, `CorrectiveRAGProject/`, `RAGArxiv/` |
+| `TAVILY_API_KEY` | `CorrectiveRAGProject/` |
+| `LANGCHAIN_API_KEY`, `LANGCHAIN_TRACING_V2`, `LANGCHAIN_PROJECT` | LangSmith tracing (isteğe bağlı) |
+
+`RAGIntro/` ve `RAGArxiv/` için `.env.example` yok; en az `OPENAI_API_KEY` içeren bir `.env` oluşturun. `VisionTransformer/` API anahtarı gerektirmez.
+
+`.env` dosyaları `.gitignore` içinde, yani API anahtarları repoya girmez.
