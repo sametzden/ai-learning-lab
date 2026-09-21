@@ -1,0 +1,5 @@
+.venv/
+.ipynb_checkpoints/
+
+# Veri seti (Caltech101) torchvision ile yeniden indirilir, repoya girmez
+data/
