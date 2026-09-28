@@ -40,20 +40,5 @@ jupyter lab
 
 Caltech101 veri seti ilk çalıştırmada `torchvision` tarafından `data/` klasörüne indirilir (~150 MB, repoya girmez). CUDA destekli bir GPU varsa otomatik kullanılır.
 
-## Ortam değişkenleri
 
-LangChain projeleri API anahtarlarını `.env` dosyasından okur. `.env.example` bulunan klasörlerde (`VectorStore/`, `CorrectiveRAGProject/`) bu dosyayı kopyalayıp kendi anahtarlarınızı girin:
-
-```bash
-cp .env.example .env
-```
-
-| Değişken | Kullanan projeler |
-|---|---|
-| `OPENAI_API_KEY` | `VectorStore/`, `RAGIntro/`, `CorrectiveRAGProject/`, `RAGArxiv/` |
-| `TAVILY_API_KEY` | `CorrectiveRAGProject/` |
-| `LANGCHAIN_API_KEY`, `LANGCHAIN_TRACING_V2`, `LANGCHAIN_PROJECT` | LangSmith tracing (isteğe bağlı) |
-
-`RAGIntro/` ve `RAGArxiv/` için `.env.example` yok; en az `OPENAI_API_KEY` içeren bir `.env` oluşturun. `VisionTransformer/` API anahtarı gerektirmez.
-
-`.env` dosyaları `.gitignore` içinde, yani API anahtarları repoya girmez.
+`
