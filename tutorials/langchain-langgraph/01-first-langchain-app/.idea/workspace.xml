@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6b940bd-c3ef-494b-a5e6-501860df0511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,65 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="5.591633550972457E-38" />
+      <entry key="MS500" value="3.9679536295665936E-8" />
+      <entry key="S2" value="0.027290211644494914" />
+      <entry key="S5" value="0.45128721312304193" />
+      <entry key="S10" value="1.1609058033195592" />
+      <entry key="S30" value="2.367314206734464" />
+      <entry key="S60" value="4.766418301500876" />
+      <entry key="M2" value="11.051812040031724" />
+      <entry key="M5" value="23.651315270579097" />
+      <entry key="M10" value="42.31514712826367" />
+      <entry key="M15" value="58.73774569567485" />
+      <entry key="M30" value="88.92124164032867" />
+      <entry key="H1" value="112.8850286905242" />
+      <entry key="H2" value="128.0981762744513" />
+      <entry key="H4" value="136.6840722439362" />
+      <entry key="D1" value="144.39398798483333" />
+      <entry key="W1" value="145.76922683027234" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000000016" />
+      <entry key="S60" value="1.0000001001597123" />
+      <entry key="M2" value="1.0008600194914723" />
+      <entry key="M5" value="1.2302997162178337" />
+      <entry key="M10" value="2.56462483822292" />
+      <entry key="M15" value="3.985461662005336" />
+      <entry key="M30" value="6.719065125631563" />
+      <entry key="H1" value="8.927522572054311" />
+      <entry key="H2" value="10.337046547437994" />
+      <entry key="H4" value="11.134146766228367" />
+      <entry key="D1" value="11.850668645960663" />
+      <entry key="W1" value="11.978540579950542" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="7.556469695031199E-4" />
+      <entry key="MS500" value="0.23750013440267603" />
+      <entry key="S2" value="0.7250538197784124" />
+      <entry key="S5" value="1.3148705467908315" />
+      <entry key="S10" value="2.088187638550792" />
+      <entry key="S30" value="3.341433932579255" />
+      <entry key="S60" value="5.752970139014237" />
+      <entry key="M2" value="12.04549467383611" />
+      <entry key="M5" value="24.877150965015467" />
+      <entry key="M10" value="44.873525180802716" />
+      <entry key="M15" value="62.716188025578134" />
+      <entry key="M30" value="95.63403490731123" />
+      <entry key="H1" value="121.80829396636568" />
+      <entry key="H2" value="138.43273532614776" />
+      <entry key="H4" value="147.81687364868512" />
+      <entry key="D1" value="156.24441716640948" />
+      <entry key="W1" value="157.74773281236392" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7,
@@ -27,6 +87,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
