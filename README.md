@@ -1,6 +1,6 @@
 # ai-learning-lab
 
-Things I build while learning machine learning and LLM tooling. Each folder is a separate, self-contained piece of work; some are tutorials I followed, some are my own experiments.
+ Hands-on work from learning deep learning and LLM engineering. Each folder is self-contained: some follow a course and are written by hand, others are my own experiments built on top.
 
 | Folder | What it is |
 |---|---|
