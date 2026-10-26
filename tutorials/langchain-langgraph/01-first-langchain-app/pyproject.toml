@@ -1,7 +1,7 @@
 [project]
 name = "01-first-langchain-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "First LangChain chain: prompt template piped into a chat model to summarize a bio."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

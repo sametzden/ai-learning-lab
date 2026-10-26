@@ -10,6 +10,7 @@
 | [`llm-projects/`](llm-projects) | LangChain, RAG and embedding experiments. |
 | [`tutorials/langgraph/`](tutorials/langgraph) | LangGraph tutorial notebooks. |
 | [`tutorials/agentic-ai/`](tutorials/agentic-ai) | Agentic AI tutorial notebooks and small apps. |
+| [`tutorials/langchain-langgraph/`](tutorials/langchain-langgraph) | Eden Marco's LangChain & LangGraph course, one folder per app, each with its own uv environment. |
 
 ## Notes
 
